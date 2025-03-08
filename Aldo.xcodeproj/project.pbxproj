@@ -16,7 +16,6 @@
 		498C52C62D78879A0080DD32 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C52C52D78879A0080DD32 /* ProfileView.swift */; };
 		498C52C82D7888220080DD32 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C52C72D7888220080DD32 /* User.swift */; };
 		498C52CA2D78885F0080DD32 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C52C92D78885F0080DD32 /* UserService.swift */; };
-		498C52CC2D788D3E0080DD32 /* A-Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C52CB2D788D340080DD32 /* A-Key.swift */; };
 		498C52D82D7AA6360080DD32 /* LeagueChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C52D72D7AA6360080DD32 /* LeagueChatView.swift */; };
 		498C52DA2D7AA7820080DD32 /* DateBasedRSVPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C52D92D7AA7820080DD32 /* DateBasedRSVPView.swift */; };
 		498C52DC2D7AA78E0080DD32 /* LeagueScheduleDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C52DB2D7AA78E0080DD32 /* LeagueScheduleDate.swift */; };
@@ -33,6 +32,23 @@
 		498C52F82D7CBB810080DD32 /* PHPickerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C52F72D7CBB810080DD32 /* PHPickerRepresentable.swift */; };
 		498C52FA2D7CBC5A0080DD32 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C52F92D7CBC5A0080DD32 /* SectionHeader.swift */; };
 		498C52FC2D7CBC740080DD32 /* LeagueRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C52FB2D7CBC740080DD32 /* LeagueRound.swift */; };
+		498C53002D7CD0130080DD32 /* LeagueMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C52FF2D7CD0130080DD32 /* LeagueMessage.swift */; };
+		498C53022D7CD02D0080DD32 /* MessageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C53012D7CD02D0080DD32 /* MessageRow.swift */; };
+		498C53042D7CD1B80080DD32 /* LeagueEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C53032D7CD1B80080DD32 /* LeagueEditView.swift */; };
+		498C53062D7CD1F60080DD32 /* PlayerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C53052D7CD1F60080DD32 /* PlayerDetailView.swift */; };
+		498C53082D7CD1FE0080DD32 /* ScheduleDateCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C53072D7CD1FE0080DD32 /* ScheduleDateCard.swift */; };
+		498C530A2D7CD2060080DD32 /* RoundCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C53092D7CD2060080DD32 /* RoundCard.swift */; };
+		498C530C2D7CD2AC0080DD32 /* PHPickerViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C530B2D7CD2AC0080DD32 /* PHPickerViewRepresentable.swift */; };
+		498C530E2D7CE9160080DD32 /* EnhancedLeagueEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C530D2D7CE9160080DD32 /* EnhancedLeagueEditView.swift */; };
+		498C53102D7CF0930080DD32 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C530F2D7CF0930080DD32 /* Notification.swift */; };
+		498C53122D7CF1EF0080DD32 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C53112D7CF1EF0080DD32 /* NotificationModel.swift */; };
+		498C53142D7CF2110080DD32 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C53132D7CF2110080DD32 /* NotificationManager.swift */; };
+		498C53162D7CF2320080DD32 /* AldoNotificationBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C53152D7CF2320080DD32 /* AldoNotificationBadge.swift */; };
+		498C53182D7CF29C0080DD32 /* NotificationHelpers.swift in Resources */ = {isa = PBXBuildFile; fileRef = 498C53172D7CF29C0080DD32 /* NotificationHelpers.swift */; };
+		498C531A2D7CF2E80080DD32 /* AldoNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C53192D7CF2E80080DD32 /* AldoNotification.swift */; };
+		498C531C2D7CF2F90080DD32 /* AldoNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C531B2D7CF2F90080DD32 /* AldoNotificationManager.swift */; };
+		498C531E2D7CF3330080DD32 /* AldoNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C531D2D7CF3330080DD32 /* AldoNotificationView.swift */; };
+		498C53202D7CF3970080DD32 /* AldoNotificationHelpers.swift in Resources */ = {isa = PBXBuildFile; fileRef = 498C531F2D7CF3970080DD32 /* AldoNotificationHelpers.swift */; };
 		9CB92DB62D46C35C00AE6B05 /* CourseSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB92DB52D46C34F00AE6B05 /* CourseSearchView.swift */; };
 		9CB92DB82D46C56000AE6B05 /* GolfCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB92DB72D46C54E00AE6B05 /* GolfCourse.swift */; };
 		9CB92DBC2D47365C00AE6B05 /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB92DBB2D47365B00AE6B05 /* League.swift */; };
@@ -181,7 +197,6 @@
 		498C52C52D78879A0080DD32 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		498C52C72D7888220080DD32 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		498C52C92D78885F0080DD32 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
-		498C52CB2D788D340080DD32 /* A-Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "A-Key.swift"; sourceTree = "<group>"; };
 		498C52D72D7AA6360080DD32 /* LeagueChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueChatView.swift; sourceTree = "<group>"; };
 		498C52D92D7AA7820080DD32 /* DateBasedRSVPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateBasedRSVPView.swift; sourceTree = "<group>"; };
 		498C52DB2D7AA78E0080DD32 /* LeagueScheduleDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueScheduleDate.swift; sourceTree = "<group>"; };
@@ -198,6 +213,23 @@
 		498C52F72D7CBB810080DD32 /* PHPickerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPickerRepresentable.swift; sourceTree = "<group>"; };
 		498C52F92D7CBC5A0080DD32 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		498C52FB2D7CBC740080DD32 /* LeagueRound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueRound.swift; sourceTree = "<group>"; };
+		498C52FF2D7CD0130080DD32 /* LeagueMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueMessage.swift; sourceTree = "<group>"; };
+		498C53012D7CD02D0080DD32 /* MessageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRow.swift; sourceTree = "<group>"; };
+		498C53032D7CD1B80080DD32 /* LeagueEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueEditView.swift; sourceTree = "<group>"; };
+		498C53052D7CD1F60080DD32 /* PlayerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailView.swift; sourceTree = "<group>"; };
+		498C53072D7CD1FE0080DD32 /* ScheduleDateCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDateCard.swift; sourceTree = "<group>"; };
+		498C53092D7CD2060080DD32 /* RoundCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCard.swift; sourceTree = "<group>"; };
+		498C530B2D7CD2AC0080DD32 /* PHPickerViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPickerViewRepresentable.swift; sourceTree = "<group>"; };
+		498C530D2D7CE9160080DD32 /* EnhancedLeagueEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnhancedLeagueEditView.swift; sourceTree = "<group>"; };
+		498C530F2D7CF0930080DD32 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		498C53112D7CF1EF0080DD32 /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
+		498C53132D7CF2110080DD32 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		498C53152D7CF2320080DD32 /* AldoNotificationBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AldoNotificationBadge.swift; sourceTree = "<group>"; };
+		498C53172D7CF29C0080DD32 /* NotificationHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHelpers.swift; sourceTree = "<group>"; };
+		498C53192D7CF2E80080DD32 /* AldoNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AldoNotification.swift; sourceTree = "<group>"; };
+		498C531B2D7CF2F90080DD32 /* AldoNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AldoNotificationManager.swift; sourceTree = "<group>"; };
+		498C531D2D7CF3330080DD32 /* AldoNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AldoNotificationView.swift; sourceTree = "<group>"; };
+		498C531F2D7CF3970080DD32 /* AldoNotificationHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AldoNotificationHelpers.swift; sourceTree = "<group>"; };
 		9CB92DB52D46C34F00AE6B05 /* CourseSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSearchView.swift; sourceTree = "<group>"; };
 		9CB92DB72D46C54E00AE6B05 /* GolfCourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfCourse.swift; sourceTree = "<group>"; };
 		9CB92DBB2D47365B00AE6B05 /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
@@ -373,6 +405,13 @@
 		EAE8EB292C1A898D00E30653 /* Aldo */ = {
 			isa = PBXGroup;
 			children = (
+				498C531D2D7CF3330080DD32 /* AldoNotificationView.swift */,
+				498C531B2D7CF2F90080DD32 /* AldoNotificationManager.swift */,
+				498C53192D7CF2E80080DD32 /* AldoNotification.swift */,
+				498C53132D7CF2110080DD32 /* NotificationManager.swift */,
+				498C53112D7CF1EF0080DD32 /* NotificationModel.swift */,
+				498C53012D7CD02D0080DD32 /* MessageRow.swift */,
+				498C52FF2D7CD0130080DD32 /* LeagueMessage.swift */,
 				498C52FB2D7CBC740080DD32 /* LeagueRound.swift */,
 				498C52F72D7CBB810080DD32 /* PHPickerRepresentable.swift */,
 				498C52F52D7CBB6B0080DD32 /* WeekDay.swift */,
@@ -384,7 +423,6 @@
 				EA0D9BDE2C23CB0B0045669C /* Aldo.entitlements */,
 				EAE8EBA32C1A995E00E30653 /* GoogleService-Info.plist */,
 				EA4B94A52C27DB1300899DF1 /* Info.plist */,
-				498C52CB2D788D340080DD32 /* A-Key.swift */,
 				EAE8EB2A2C1A898D00E30653 /* AldoApp.swift */,
 				EA0D9BE32C23D0470045669C /* AppDelegate.swift */,
 				EA8878BC2C2A23630033C943 /* AppUser.swift */,
@@ -476,6 +514,16 @@
 		EAE8EB882C1A8C3600E30653 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				498C531F2D7CF3970080DD32 /* AldoNotificationHelpers.swift */,
+				498C53172D7CF29C0080DD32 /* NotificationHelpers.swift */,
+				498C53152D7CF2320080DD32 /* AldoNotificationBadge.swift */,
+				498C530F2D7CF0930080DD32 /* Notification.swift */,
+				498C530D2D7CE9160080DD32 /* EnhancedLeagueEditView.swift */,
+				498C530B2D7CD2AC0080DD32 /* PHPickerViewRepresentable.swift */,
+				498C53092D7CD2060080DD32 /* RoundCard.swift */,
+				498C53072D7CD1FE0080DD32 /* ScheduleDateCard.swift */,
+				498C53052D7CD1F60080DD32 /* PlayerDetailView.swift */,
+				498C53032D7CD1B80080DD32 /* LeagueEditView.swift */,
 				498C52F92D7CBC5A0080DD32 /* SectionHeader.swift */,
 				498C52F32D7CB49D0080DD32 /* ImprovedCreateLeagueView.swift */,
 				498C52F12D7CAE990080DD32 /* EnhancedLeagueDetailView.swift */,
@@ -726,7 +774,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				498C53182D7CF29C0080DD32 /* NotificationHelpers.swift in Resources */,
 				EAE8EB342C1A899000E30653 /* Preview Assets.xcassets in Resources */,
+				498C53202D7CF3970080DD32 /* AldoNotificationHelpers.swift in Resources */,
 				EAE8EB312C1A899000E30653 /* Assets.xcassets in Resources */,
 				498C52E62D7AACEA0080DD32 /* UserService+ProfileImage.swift   in Resources */,
 				EAE8EBA42C1A995E00E30653 /* GoogleService-Info.plist in Resources */,
@@ -779,10 +829,15 @@
 			files = (
 				EAE8EB982C1A93AB00E30653 /* ActivityView.swift in Sources */,
 				9CB92DBC2D47365C00AE6B05 /* League.swift in Sources */,
+				498C53122D7CF1EF0080DD32 /* NotificationModel.swift in Sources */,
+				498C530A2D7CD2060080DD32 /* RoundCard.swift in Sources */,
+				498C53082D7CD1FE0080DD32 /* ScheduleDateCard.swift in Sources */,
 				EAE8EB2D2C1A898D00E30653 /* ContentView.swift in Sources */,
 				EAE8EB922C1A8E1D00E30653 /* MainView.swift in Sources */,
+				498C531E2D7CF3330080DD32 /* AldoNotificationView.swift in Sources */,
 				498C52EA2D7BECC20080DD32 /* EnhancedLeague.swift in Sources */,
 				9CB92DB62D46C35C00AE6B05 /* CourseSearchView.swift in Sources */,
+				498C53102D7CF0930080DD32 /* Notification.swift in Sources */,
 				EA0D9BF42C23D3B30045669C /* iOSWorkoutManager.swift in Sources */,
 				498C52BC2D7885EF0080DD32 /* FirestoreManager.swift in Sources */,
 				EAE8EB2F2C1A898D00E30653 /* Item.swift in Sources */,
@@ -791,19 +846,27 @@
 				EA8878BF2C2B3C8F0033C943 /* WorkoutStats.swift in Sources */,
 				498C52EC2D7BECCD0080DD32 /* EnhancedLeagueService.swift in Sources */,
 				EAE8EB2B2C1A898D00E30653 /* AldoApp.swift in Sources */,
+				498C53142D7CF2110080DD32 /* NotificationManager.swift in Sources */,
+				498C530E2D7CE9160080DD32 /* EnhancedLeagueEditView.swift in Sources */,
 				498C52C62D78879A0080DD32 /* ProfileView.swift in Sources */,
 				9CB92DC42D47368B00AE6B05 /* LeagueService.swift in Sources */,
+				498C53022D7CD02D0080DD32 /* MessageRow.swift in Sources */,
 				498C52C42D78877A0080DD32 /* PhoneVerificationView.swift in Sources */,
 				9CB92DC82D4736AE00AE6B05 /* LeagueDetailView.swift in Sources */,
 				EAE8EB8C2C1A8D5D00E30653 /* LoginView.swift in Sources */,
 				498C52CA2D78885F0080DD32 /* UserService.swift in Sources */,
+				498C530C2D7CD2AC0080DD32 /* PHPickerViewRepresentable.swift in Sources */,
 				498C52E02D7AABF90080DD32 /* ImageCache.swift in Sources */,
 				EAE8EB9E2C1A951800E30653 /* SettingsView.swift in Sources */,
+				498C53162D7CF2320080DD32 /* AldoNotificationBadge.swift in Sources */,
+				498C53042D7CD1B80080DD32 /* LeagueEditView.swift in Sources */,
+				498C53002D7CD0130080DD32 /* LeagueMessage.swift in Sources */,
 				EAE8EB962C1A933B00E30653 /* FriendRequestView.swift in Sources */,
 				498C52FC2D7CBC740080DD32 /* LeagueRound.swift in Sources */,
 				498C52F42D7CB49D0080DD32 /* ImprovedCreateLeagueView.swift in Sources */,
 				498C52C82D7888220080DD32 /* User.swift in Sources */,
 				9CB92DC22D47367E00AE6B05 /* SearchLeaguesView.swift in Sources */,
+				498C531C2D7CF2F90080DD32 /* AldoNotificationManager.swift in Sources */,
 				498C52FA2D7CBC5A0080DD32 /* SectionHeader.swift in Sources */,
 				EAE8EB8E2C1A8D7F00E30653 /* SignUpView.swift in Sources */,
 				EA4B94A82C27E93A00899DF1 /* IndividualHoleView.swift in Sources */,
@@ -823,13 +886,14 @@
 				EA0D9BE42C23D0470045669C /* AppDelegate.swift in Sources */,
 				498C52E22D7AAC0A0080DD32 /* CachedNetworkImage.swift in Sources */,
 				EA0D9C052C27D4E70045669C /* HealthKitIntegration.swift in Sources */,
+				498C53062D7CD1F60080DD32 /* PlayerDetailView.swift in Sources */,
 				498C52BE2D7886BE0080DD32 /* LeagueSubmissionView.swift in Sources */,
 				498C52DC2D7AA78E0080DD32 /* LeagueScheduleDate.swift in Sources */,
-				498C52CC2D788D3E0080DD32 /* A-Key.swift in Sources */,
 				EAE8EB8A2C1A8D2100E30653 /* WelcomeView.swift in Sources */,
 				498C52F62D7CBB6B0080DD32 /* WeekDay.swift in Sources */,
 				9CB92DB82D46C56000AE6B05 /* GolfCourse.swift in Sources */,
 				498C52F22D7CAE990080DD32 /* EnhancedLeagueDetailView.swift in Sources */,
+				498C531A2D7CF2E80080DD32 /* AldoNotification.swift in Sources */,
 				9CB92DCA2D4739CD00AE6B05 /* Score.swift in Sources */,
 				498C52C02D78872C0080DD32 /* NetworkMonitor.swift in Sources */,
 				498C52DA2D7AA7820080DD32 /* DateBasedRSVPView.swift in Sources */,
