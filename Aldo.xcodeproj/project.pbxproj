@@ -49,6 +49,12 @@
 		498C531C2D7CF2F90080DD32 /* AldoNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C531B2D7CF2F90080DD32 /* AldoNotificationManager.swift */; };
 		498C531E2D7CF3330080DD32 /* AldoNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C531D2D7CF3330080DD32 /* AldoNotificationView.swift */; };
 		498C53202D7CF3970080DD32 /* AldoNotificationHelpers.swift in Resources */ = {isa = PBXBuildFile; fileRef = 498C531F2D7CF3970080DD32 /* AldoNotificationHelpers.swift */; };
+		498C53232D7CFE190080DD32 /* CSV in Frameworks */ = {isa = PBXBuildFile; productRef = 498C53222D7CFE190080DD32 /* CSV */; };
+		498C53252D7D00CB0080DD32 /* convertCSVToJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C53242D7D00C80080DD32 /* convertCSVToJSON.swift */; };
+		498C53272D7D25E80080DD32 /* DirectCSVConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C53262D7D25E80080DD32 /* DirectCSVConverter.swift */; };
+		498C53292D7D34170080DD32 /* golfCourses.json in Resources */ = {isa = PBXBuildFile; fileRef = 498C53282D7D34170080DD32 /* golfCourses.json */; };
+		498C532B2D7D35200080DD32 /* GolfCourseDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C532A2D7D35200080DD32 /* GolfCourseDataManager.swift */; };
+		498C532D2D7D3C830080DD32 /* AppLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C532C2D7D3C830080DD32 /* AppLocationManager.swift */; };
 		9CB92DB62D46C35C00AE6B05 /* CourseSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB92DB52D46C34F00AE6B05 /* CourseSearchView.swift */; };
 		9CB92DB82D46C56000AE6B05 /* GolfCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB92DB72D46C54E00AE6B05 /* GolfCourse.swift */; };
 		9CB92DBC2D47365C00AE6B05 /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB92DBB2D47365B00AE6B05 /* League.swift */; };
@@ -230,6 +236,11 @@
 		498C531B2D7CF2F90080DD32 /* AldoNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AldoNotificationManager.swift; sourceTree = "<group>"; };
 		498C531D2D7CF3330080DD32 /* AldoNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AldoNotificationView.swift; sourceTree = "<group>"; };
 		498C531F2D7CF3970080DD32 /* AldoNotificationHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AldoNotificationHelpers.swift; sourceTree = "<group>"; };
+		498C53242D7D00C80080DD32 /* convertCSVToJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = convertCSVToJSON.swift; sourceTree = "<group>"; };
+		498C53262D7D25E80080DD32 /* DirectCSVConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectCSVConverter.swift; sourceTree = "<group>"; };
+		498C53282D7D34170080DD32 /* golfCourses.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = golfCourses.json; sourceTree = "<group>"; };
+		498C532A2D7D35200080DD32 /* GolfCourseDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfCourseDataManager.swift; sourceTree = "<group>"; };
+		498C532C2D7D3C830080DD32 /* AppLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLocationManager.swift; sourceTree = "<group>"; };
 		9CB92DB52D46C34F00AE6B05 /* CourseSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSearchView.swift; sourceTree = "<group>"; };
 		9CB92DB72D46C54E00AE6B05 /* GolfCourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfCourse.swift; sourceTree = "<group>"; };
 		9CB92DBB2D47365B00AE6B05 /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
@@ -311,6 +322,7 @@
 				EA0D9BC92C1AAACD0045669C /* FirebaseRemoteConfigSwift in Frameworks */,
 				EA0D9BD92C23C8930045669C /* FacebookCore in Frameworks */,
 				EA0D9BA92C1AAACD0045669C /* FirebaseCrashlytics in Frameworks */,
+				498C53232D7CFE190080DD32 /* CSV in Frameworks */,
 				EA0D9BDD2C23C8930045669C /* FacebookLogin in Frameworks */,
 				EA0D9BBB2C1AAACD0045669C /* FirebaseInAppMessaging-Beta in Frameworks */,
 				EA0D9BAD2C1AAACD0045669C /* FirebaseDatabaseSwift in Frameworks */,
@@ -405,44 +417,49 @@
 		EAE8EB292C1A898D00E30653 /* Aldo */ = {
 			isa = PBXGroup;
 			children = (
-				498C531D2D7CF3330080DD32 /* AldoNotificationView.swift */,
-				498C531B2D7CF2F90080DD32 /* AldoNotificationManager.swift */,
-				498C53192D7CF2E80080DD32 /* AldoNotification.swift */,
-				498C53132D7CF2110080DD32 /* NotificationManager.swift */,
-				498C53112D7CF1EF0080DD32 /* NotificationModel.swift */,
-				498C53012D7CD02D0080DD32 /* MessageRow.swift */,
-				498C52FF2D7CD0130080DD32 /* LeagueMessage.swift */,
-				498C52FB2D7CBC740080DD32 /* LeagueRound.swift */,
-				498C52F72D7CBB810080DD32 /* PHPickerRepresentable.swift */,
-				498C52F52D7CBB6B0080DD32 /* WeekDay.swift */,
-				498C52E52D7AACEA0080DD32 /* UserService+ProfileImage.swift   */,
-				498C52E12D7AAC0A0080DD32 /* CachedNetworkImage.swift */,
-				498C52DF2D7AABF90080DD32 /* ImageCache.swift */,
-				498C52DD2D7AAB8F0080DD32 /* ImageUploadService.swift */,
-				498C52DB2D7AA78E0080DD32 /* LeagueScheduleDate.swift */,
+				498C532C2D7D3C830080DD32 /* AppLocationManager.swift */,
 				EA0D9BDE2C23CB0B0045669C /* Aldo.entitlements */,
-				EAE8EBA32C1A995E00E30653 /* GoogleService-Info.plist */,
-				EA4B94A52C27DB1300899DF1 /* Info.plist */,
 				EAE8EB2A2C1A898D00E30653 /* AldoApp.swift */,
+				498C53192D7CF2E80080DD32 /* AldoNotification.swift */,
+				498C531B2D7CF2F90080DD32 /* AldoNotificationManager.swift */,
+				498C531D2D7CF3330080DD32 /* AldoNotificationView.swift */,
 				EA0D9BE32C23D0470045669C /* AppDelegate.swift */,
 				EA8878BC2C2A23630033C943 /* AppUser.swift */,
+				EAE8EB302C1A899000E30653 /* Assets.xcassets */,
 				EAE8EB8F2C1A8D9800E30653 /* AuthenticationManager.swift */,
+				498C52E12D7AAC0A0080DD32 /* CachedNetworkImage.swift */,
+				498C53242D7D00C80080DD32 /* convertCSVToJSON.swift */,
+				498C53262D7D25E80080DD32 /* DirectCSVConverter.swift */,
 				498C52BB2D7885EF0080DD32 /* FirestoreManager.swift */,
 				EA8878B82C2A202E0033C943 /* Friend.swift */,
+				498C532A2D7D35200080DD32 /* GolfCourseDataManager.swift */,
+				498C53282D7D34170080DD32 /* golfCourses.json */,
+				EAE8EBA32C1A995E00E30653 /* GoogleService-Info.plist */,
 				EA0D9C042C27D4E70045669C /* HealthKitIntegration.swift */,
+				498C52DF2D7AABF90080DD32 /* ImageCache.swift */,
+				498C52DD2D7AAB8F0080DD32 /* ImageUploadService.swift */,
+				EA4B94A52C27DB1300899DF1 /* Info.plist */,
 				EA0D9BF32C23D3B30045669C /* iOSWorkoutManager.swift */,
 				EAE8EB2E2C1A898D00E30653 /* Item.swift */,
+				498C52FF2D7CD0130080DD32 /* LeagueMessage.swift */,
+				498C52FB2D7CBC740080DD32 /* LeagueRound.swift */,
+				498C52DB2D7AA78E0080DD32 /* LeagueScheduleDate.swift */,
+				498C53012D7CD02D0080DD32 /* MessageRow.swift */,
 				498C52BF2D78872C0080DD32 /* NetworkMonitor.swift */,
+				498C53132D7CF2110080DD32 /* NotificationManager.swift */,
+				498C53112D7CF1EF0080DD32 /* NotificationModel.swift */,
 				498C52C12D7887580080DD32 /* NotificationService.swift */,
 				498C52C32D78877A0080DD32 /* PhoneVerificationView.swift */,
+				498C52F72D7CBB810080DD32 /* PHPickerRepresentable.swift */,
+				EAE8EB322C1A899000E30653 /* Preview Content */,
 				9CB92DC52D47369D00AE6B05 /* ScoreService.swift */,
 				498C52C72D7888220080DD32 /* User.swift */,
 				EAE8EB932C1A931D00E30653 /* UserModel.swift */,
 				498C52C92D78885F0080DD32 /* UserService.swift */,
-				EA8878BE2C2B3C8F0033C943 /* WorkoutStats.swift */,
-				EAE8EB302C1A899000E30653 /* Assets.xcassets */,
-				EAE8EB322C1A899000E30653 /* Preview Content */,
+				498C52E52D7AACEA0080DD32 /* UserService+ProfileImage.swift   */,
 				EAE8EB882C1A8C3600E30653 /* Views */,
+				498C52F52D7CBB6B0080DD32 /* WeekDay.swift */,
+				EA8878BE2C2B3C8F0033C943 /* WorkoutStats.swift */,
 			);
 			path = Aldo;
 			sourceTree = "<group>";
@@ -514,46 +531,46 @@
 		EAE8EB882C1A8C3600E30653 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				498C531F2D7CF3970080DD32 /* AldoNotificationHelpers.swift */,
-				498C53172D7CF29C0080DD32 /* NotificationHelpers.swift */,
-				498C53152D7CF2320080DD32 /* AldoNotificationBadge.swift */,
-				498C530F2D7CF0930080DD32 /* Notification.swift */,
-				498C530D2D7CE9160080DD32 /* EnhancedLeagueEditView.swift */,
-				498C530B2D7CD2AC0080DD32 /* PHPickerViewRepresentable.swift */,
-				498C53092D7CD2060080DD32 /* RoundCard.swift */,
-				498C53072D7CD1FE0080DD32 /* ScheduleDateCard.swift */,
-				498C53052D7CD1F60080DD32 /* PlayerDetailView.swift */,
-				498C53032D7CD1B80080DD32 /* LeagueEditView.swift */,
-				498C52F92D7CBC5A0080DD32 /* SectionHeader.swift */,
-				498C52F32D7CB49D0080DD32 /* ImprovedCreateLeagueView.swift */,
-				498C52F12D7CAE990080DD32 /* EnhancedLeagueDetailView.swift */,
-				498C52EB2D7BECCD0080DD32 /* EnhancedLeagueService.swift */,
-				498C52E92D7BECC20080DD32 /* EnhancedLeague.swift */,
-				498C52E72D7BEB3C0080DD32 /* LeagueDashboardView.swift */,
-				498C52D92D7AA7820080DD32 /* DateBasedRSVPView.swift */,
-				498C52D72D7AA6360080DD32 /* LeagueChatView.swift */,
 				EA0D9BE12C23CFCF0045669C /* ActivityAndTransportPromptView.swift */,
 				EAE8EB972C1A93AB00E30653 /* ActivityView.swift */,
+				498C53152D7CF2320080DD32 /* AldoNotificationBadge.swift */,
+				498C531F2D7CF3970080DD32 /* AldoNotificationHelpers.swift */,
 				EAE8EB2C2C1A898D00E30653 /* ContentView.swift */,
 				9CB92DB52D46C34F00AE6B05 /* CourseSearchView.swift */,
 				9CB92DCD2D473F9500AE6B05 /* CreateLeagueView.swift */,
+				498C52D92D7AA7820080DD32 /* DateBasedRSVPView.swift */,
+				498C52E92D7BECC20080DD32 /* EnhancedLeague.swift */,
+				498C52F12D7CAE990080DD32 /* EnhancedLeagueDetailView.swift */,
+				498C530D2D7CE9160080DD32 /* EnhancedLeagueEditView.swift */,
+				498C52EB2D7BECCD0080DD32 /* EnhancedLeagueService.swift */,
 				498C52B92D7885BD0080DD32 /* EnhancedPlayNowView.swift */,
 				EAE8EB952C1A933B00E30653 /* FriendRequestView.swift */,
 				EAE40D5A2C29AC6800B6DD64 /* FriendsListView.swift */,
 				9CB92DB72D46C54E00AE6B05 /* GolfCourse.swift */,
 				EAE8EB9F2C1A976E00E30653 /* ImagePicker.swift */,
+				498C52F32D7CB49D0080DD32 /* ImprovedCreateLeagueView.swift */,
 				EA4B94A72C27E93900899DF1 /* IndividualHoleView.swift */,
 				9CB92DBB2D47365B00AE6B05 /* League.swift */,
+				498C52D72D7AA6360080DD32 /* LeagueChatView.swift */,
+				498C52E72D7BEB3C0080DD32 /* LeagueDashboardView.swift */,
 				9CB92DC72D4736AE00AE6B05 /* LeagueDetailView.swift */,
+				498C53032D7CD1B80080DD32 /* LeagueEditView.swift */,
 				9CB92DC32D47368B00AE6B05 /* LeagueService.swift */,
 				498C52BD2D7886BE0080DD32 /* LeagueSubmissionView.swift */,
 				EAE8EB8B2C1A8D5D00E30653 /* LoginView.swift */,
 				EAE8EB992C1A947800E30653 /* LogScoreView.swift */,
 				EAE8EB912C1A8E1D00E30653 /* MainView.swift */,
+				498C530F2D7CF0930080DD32 /* Notification.swift */,
+				498C53172D7CF29C0080DD32 /* NotificationHelpers.swift */,
+				498C530B2D7CD2AC0080DD32 /* PHPickerViewRepresentable.swift */,
+				498C53052D7CD1F60080DD32 /* PlayerDetailView.swift */,
 				498C52C52D78879A0080DD32 /* ProfileView.swift */,
+				498C53092D7CD2060080DD32 /* RoundCard.swift */,
+				498C53072D7CD1FE0080DD32 /* ScheduleDateCard.swift */,
 				9CB92DC92D4739CD00AE6B05 /* Score.swift */,
 				EAE8EB9B2C1A94EC00E30653 /* ScoreEntryView.swift */,
 				9CB92DC12D47367E00AE6B05 /* SearchLeaguesView.swift */,
+				498C52F92D7CBC5A0080DD32 /* SectionHeader.swift */,
 				EAE8EB9D2C1A951800E30653 /* SettingsView.swift */,
 				EAE8EB8D2C1A8D7F00E30653 /* SignUpView.swift */,
 				EAE8EB892C1A8D2100E30653 /* WelcomeView.swift */,
@@ -613,6 +630,7 @@
 				EA0D9BD62C23C8930045669C /* FacebookBasics */,
 				EA0D9BD82C23C8930045669C /* FacebookCore */,
 				EA0D9BDC2C23C8930045669C /* FacebookLogin */,
+				498C53222D7CFE190080DD32 /* CSV */,
 			);
 			productName = Aldo;
 			productReference = EAE8EB272C1A898D00E30653 /* Aldo.app */;
@@ -754,6 +772,7 @@
 				EAE8EBA52C1A99ED00E30653 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				EA0D9BD02C1AADFF0045669C /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 				EA0D9BD32C23C8920045669C /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+				498C53212D7CFDE70080DD32 /* XCRemoteSwiftPackageReference "CSV" */,
 			);
 			productRefGroup = EAE8EB282C1A898D00E30653 /* Products */;
 			projectDirPath = "";
@@ -777,6 +796,7 @@
 				498C53182D7CF29C0080DD32 /* NotificationHelpers.swift in Resources */,
 				EAE8EB342C1A899000E30653 /* Preview Assets.xcassets in Resources */,
 				498C53202D7CF3970080DD32 /* AldoNotificationHelpers.swift in Resources */,
+				498C53292D7D34170080DD32 /* golfCourses.json in Resources */,
 				EAE8EB312C1A899000E30653 /* Assets.xcassets in Resources */,
 				498C52E62D7AACEA0080DD32 /* UserService+ProfileImage.swift   in Resources */,
 				EAE8EBA42C1A995E00E30653 /* GoogleService-Info.plist in Resources */,
@@ -843,6 +863,7 @@
 				EAE8EB2F2C1A898D00E30653 /* Item.swift in Sources */,
 				EAE8EB902C1A8D9800E30653 /* AuthenticationManager.swift in Sources */,
 				EA8878BD2C2A23630033C943 /* AppUser.swift in Sources */,
+				498C532D2D7D3C830080DD32 /* AppLocationManager.swift in Sources */,
 				EA8878BF2C2B3C8F0033C943 /* WorkoutStats.swift in Sources */,
 				498C52EC2D7BECCD0080DD32 /* EnhancedLeagueService.swift in Sources */,
 				EAE8EB2B2C1A898D00E30653 /* AldoApp.swift in Sources */,
@@ -857,6 +878,7 @@
 				498C52CA2D78885F0080DD32 /* UserService.swift in Sources */,
 				498C530C2D7CD2AC0080DD32 /* PHPickerViewRepresentable.swift in Sources */,
 				498C52E02D7AABF90080DD32 /* ImageCache.swift in Sources */,
+				498C53272D7D25E80080DD32 /* DirectCSVConverter.swift in Sources */,
 				EAE8EB9E2C1A951800E30653 /* SettingsView.swift in Sources */,
 				498C53162D7CF2320080DD32 /* AldoNotificationBadge.swift in Sources */,
 				498C53042D7CD1B80080DD32 /* LeagueEditView.swift in Sources */,
@@ -884,6 +906,7 @@
 				9CB92DC62D47369D00AE6B05 /* ScoreService.swift in Sources */,
 				498C52F82D7CBB810080DD32 /* PHPickerRepresentable.swift in Sources */,
 				EA0D9BE42C23D0470045669C /* AppDelegate.swift in Sources */,
+				498C532B2D7D35200080DD32 /* GolfCourseDataManager.swift in Sources */,
 				498C52E22D7AAC0A0080DD32 /* CachedNetworkImage.swift in Sources */,
 				EA0D9C052C27D4E70045669C /* HealthKitIntegration.swift in Sources */,
 				498C53062D7CD1F60080DD32 /* PlayerDetailView.swift in Sources */,
@@ -892,6 +915,7 @@
 				EAE8EB8A2C1A8D2100E30653 /* WelcomeView.swift in Sources */,
 				498C52F62D7CBB6B0080DD32 /* WeekDay.swift in Sources */,
 				9CB92DB82D46C56000AE6B05 /* GolfCourse.swift in Sources */,
+				498C53252D7D00CB0080DD32 /* convertCSVToJSON.swift in Sources */,
 				498C52F22D7CAE990080DD32 /* EnhancedLeagueDetailView.swift in Sources */,
 				498C531A2D7CF2E80080DD32 /* AldoNotification.swift in Sources */,
 				9CB92DCA2D4739CD00AE6B05 /* Score.swift in Sources */,
@@ -1466,6 +1490,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		498C53212D7CFDE70080DD32 /* XCRemoteSwiftPackageReference "CSV" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yaslab/CSV.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.2;
+			};
+		};
 		EA0D9BD02C1AADFF0045669C /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
@@ -1493,6 +1525,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		498C53222D7CFE190080DD32 /* CSV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 498C53212D7CFDE70080DD32 /* XCRemoteSwiftPackageReference "CSV" */;
+			productName = CSV;
+		};
 		EA0D9B972C1AA9500045669C /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EAE8EBA52C1A99ED00E30653 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
